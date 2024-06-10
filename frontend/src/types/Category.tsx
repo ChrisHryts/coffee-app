@@ -1,0 +1,1 @@
+export type Category = "All Categories" | "Coffee" | "Cake";
