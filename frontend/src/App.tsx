@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Box, Container } from "@mui/material";
 import axios from "axios";
+import { Box, Container } from "@mui/material";
 import _ from "lodash";
 import { Transaction } from "./types/Transaction";
 import { Category } from "./types/Category";
@@ -50,6 +50,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const filters: any = {};
+    
     if (filterCategory) filters.category = filterCategory;
     if (query) filters.type = query;
     if (amountFilter[0] !== 0 || amountFilter[1] !== 100)

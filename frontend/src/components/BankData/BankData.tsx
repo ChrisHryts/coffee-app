@@ -1,8 +1,8 @@
-import { Box, IconButton, Toolbar, Typography } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { RoundedAppBar } from "../Header/HeaderStyle";
+import { Box, IconButton, Toolbar, Typography } from "@mui/material";
 import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
+import { RoundedAppBar } from "../Header/HeaderStyle";
 
 const BankData: React.FC = () => {
   const [accountBalance, setAccountBalance] = useState<number>(0);
